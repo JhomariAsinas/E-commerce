@@ -19,11 +19,7 @@
             <label for="pwd">Password:</label>
             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="logpwd">
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="remember"> Remember me</label>
-          </div>
           <button type="submit" class="btn btn-default">Submit</button>
-           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Sign Up</button>
         </form>
       </div>
   </div>
@@ -32,6 +28,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
 
+    //Login ajax Query
     $(document).on('submit','#login',function(e){
       e.preventDefault();
 
@@ -43,7 +40,7 @@
           processData: false,
           success: function(data) {
             if(data){
-              window.location.href = 'admin/home';
+              window.location.href = 'home';
             }else{
               swal("Wrong!", "Incorrect Credentials", "error");
             }
@@ -51,7 +48,4 @@
         });
     });
   });
-
-
-
 </script>

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="">E-Commerce</a>
+      <a class="navbar-brand" href="home">E-Commerce</a>
     </div>
     <ul class="nav navbar-nav">
       <li ><a href="home">Product</a></li>
